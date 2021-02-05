@@ -3,10 +3,13 @@
 @import "config/colors";
 @import "config/bootstrap_variables";
 
+
 // External libraries
 @import "bootstrap/scss/bootstrap";
-// @import "font-awesome-sprockets";
-// @import "font-awesome";
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 
 // Your CSS partials
 @import "components/index";
