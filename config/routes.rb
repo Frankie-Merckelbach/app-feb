@@ -3,10 +3,9 @@ Rails.application.routes.draw do
 
   # the root file contains the file / page you land on
   # ROOT = YOUR FILE
-  root to: 'pages#home'
-
-  get '/about', to: 'pages#about'
-  get '/contact', to: 'pages#contact'
+  root                   to: 'pages#home',       as: :root
+  get 'about',           to: 'pages#about',      as: :about
+  get 'contact',         to: 'pages#contact',    as: :contact
   # Verb.name(action)       to'controller.name#action.name
 end
 

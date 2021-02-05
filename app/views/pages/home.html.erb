@@ -1,3 +1,15 @@
-<h1>HOME PAGE</h1>
+<h1>Welcome to my website</h1>
+<p>Today's date is <strong><%= @time %></strong> </p>
+
+<br>
+
 <p>This is your 'homepage' aka your landing page of your whole website</p>
 <p>Your visitor will land on this page if there is nothing behind your URL.com/empty</p>
+
+<!--
+ The contact after action is your param call, it will store information
+ for you to use when you call the param in the controller -->
+  <form action="/contact" method="get">
+    <input type="text" name="member" placeholder="Who are you looking for?">
+    <input type="submit">
+  </form>
